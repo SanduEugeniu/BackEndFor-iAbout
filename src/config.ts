@@ -8,7 +8,7 @@ export default {
         authSource: 'admin',
     },
     host: {
-        url: '<server-url>',
+        url: 'http://localhost',
         port: '3000',
     },
     jwt: {
@@ -16,10 +16,10 @@ export default {
         expiresIn: 36000000,
     },
     mail: {
-        host: '<smtp-host>',
-        port: '<port>',
-        secure: false,
-        user: '<username>',
-        pass: '<password>',
+        host: 'smtp.gmail.com',
+        port: '465',
+        secure: true,
+        user: 'iAbout.ro@gmail.com',
+        pass: 'Eugen.1996',
     },
   };

@@ -37,12 +37,11 @@ export class UsersService {
       } else if (!userRegistered.auth.email.valid) {
         return userRegistered;
       } else {
-        throw new HttpException('REGISTRATION.USER_ALREADY_REGISTERED', HttpStatus.FORBIDDEN);
+        throw new HttpException('This email is already registered', HttpStatus.FORBIDDEN);
       }
     } else {
-      throw new HttpException('REGISTRATION.MISSING_MANDATORY_PARAMETERS', HttpStatus.FORBIDDEN);
-    } 
-    
+      throw new HttpException('\n' + 'the data entered is invalid', HttpStatus.FORBIDDEN);
+    }
   }
 
   isValidEmail (email : string){

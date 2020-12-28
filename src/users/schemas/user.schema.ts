@@ -16,11 +16,11 @@ export const UserSchema = new mongoose.Schema({
       valid : { type: Boolean, default: false }
     },
     facebook: {
-      userid: String
+      userid: String,
     },
     gmail: {
-      userid: String
-    }
+      userid: String,
+    },
   },
   settings: {
   },
