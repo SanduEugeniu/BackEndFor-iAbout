@@ -7,5 +7,5 @@ export const ConsentRegistrySchema = new mongoose.Schema({
   date: Date,
   privacyPolicy: String,
   cookiePolicy: String,
-  acceptedPolicy: String
+  acceptedPolicy: String,
 });

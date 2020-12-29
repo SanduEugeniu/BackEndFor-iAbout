@@ -8,7 +8,7 @@ import { ProfileDto } from 'users/dto/profile.dto';
 import { SettingsDto } from 'users/dto/settings.dto';
 import { PhotoDto } from '../common/dto/photo.dto';
 import { UpdateGalleryDto } from './dto/update-gallery.dto';
-import * as _ from 'lodash'
+import * as _ from 'lodash';
 
 const saltRounds = 10;
 
@@ -16,8 +16,6 @@ const saltRounds = 10;
 export class UsersService {
   constructor(
     @InjectModel('User') private readonly userModel: Model<User>) {}
-
-  
   async findAll(): Promise<User[]> {
     return await this.userModel.find().exec();
   }

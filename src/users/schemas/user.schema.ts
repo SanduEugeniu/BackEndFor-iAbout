@@ -27,5 +27,5 @@ export const UserSchema = new mongoose.Schema({
   photos: {
     profilePic: {}, //{ type:  mongoose.Schema.Types.ObjectId , ref: 'PhotoSchema'}
     gallery: [] //[{type:  mongoose.Schema.Types.ObjectId , ref: 'PhotoSchema'}]
-  }
+  },
 });

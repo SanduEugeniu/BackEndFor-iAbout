@@ -10,20 +10,20 @@ export interface User extends Document{
   password: string;
   roles: string[];
   auth: {
-    email : {
-      valid : boolean,
+    email: {
+      valid: boolean,
     },
     facebook: {
-      userid: string
+      userid: string,
     },
     gmail: {
-      userid: string
-    }
-  },
+      userid: string,
+    };
+  };
   settings: {
-  },
+  };
   photos: {
     profilePic: Photo;
     gallery: Photo[];
-  }
+  };
 }
